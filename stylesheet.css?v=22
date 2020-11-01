@@ -1,0 +1,3064 @@
+
+body {
+  background-color: #F8F8F8;
+  text-align: center;
+  font-family: 'Open Sans',Arial,sans-serif;
+  color: #02143A;
+}
+
+#propertyGalleryModal .modal-dialog {
+  height: calc(100% - 40px);
+  max-height: 850px;
+}
+#propertyGalleryModal .modal-content {
+  height: 100%;
+}
+#propertyGalleryModal .modal-body {
+  height: calc(100% - 42px);
+  overflow-y:auto;
+}
+#propertyGalleryModal .slick-list, #propertyGalleryModal .slick-track {
+  height:100%;
+}
+
+.calendarMonthNote {
+    margin-bottom: 0;
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+ul#propertyNavList {
+  list-style-type: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #85754f;
+  padding-left: 0;
+  background-color: #03143a;
+}
+.detailsOfferInfo {
+  width: 130px;
+}
+.propertyGalleryMainImagesLink {
+  display:none;
+  color:#fff;
+}
+.propertyGalleryFloorPlansLink {
+  color: #fff;
+}
+.propertyFloorPlanGallerySlider {
+  display: none;
+}
+.slideshowCaption {
+  margin-bottom:0;
+  min-height:20px;
+}
+.properyImageNavThumbnail {
+  width: 100%;
+  height: 75px;
+  background-size: cover;
+  margin-bottom: 4px;
+  cursor: pointer;
+  background-position:center center;
+}
+.properyImageNavThumbnail.currentSlide {
+  border: 6px solid #85754f;
+}
+#propertyPageMobileGallerySlideshow .slick-prev {
+  left: 0;
+  z-index: 1000;
+  width: 50px;
+  height: 100%;
+}
+.floorPlansGalleryLink:hover, .mainImagesGalleryLink:hover {
+  background-color: #85754f;
+  color:#fff;
+}
+
+.galleryLinks {
+  display: block;
+  color: #fff;
+  margin-bottom: 5px;
+  text-align: right;
+}
+
+.galleryLinks a:hover {
+  text-decoration: underline;
+  color:#fff;
+}
+.galleryLinks a {
+  margin-left:4px;
+}
+
+#propertyPageMobileGallerySlideshow .slick-prev:before, #propertyPageMobileGallerySlideshow .slick-next:before {
+  font-size:30px;
+}
+
+#propertyPageMobileGallerySlideshow .slick-next {
+  right: 0;
+  z-index: 1000;
+  width: 50px;
+  height: 100%;
+}
+.propertyGalleryImageContainer {
+  white-space: nowrap;
+  text-align: center;
+}
+.propertyGalleryImageContainer img {
+  display:inline-block;
+}
+.propertyGalleryImageContainer .helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  content: '';
+}
+
+.propertyGalleryNavContainer {
+  overflow-y: auto;
+}
+
+.propertyCalendarTextColumn {
+  padding-left: 0;
+}
+
+.btn-arrow-group > button {
+  margin-right: -3px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #CCCCCC;
+}
+.btn-arrow {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.btn-arrow-active {
+  background-color: #02143B;
+  color: #fff;
+  border: 1px solid #0E3293;
+}
+
+.btn-arrow-right, .btn-arrow-left {
+  position: relative;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.btn-arrow-group > button {
+  margin-right: -3px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #CCCCCC;
+}
+
+.btn-arrow-right {
+  padding-left: 25px;
+}
+
+.btn-arrow-left {
+  padding-right: 25px;
+}
+
+  .btn-arrow-right:before, .btn-arrow-right:after, .btn-arrow-left:before, .btn-arrow-left:after {
+    /* make two squares (before and after), looking similar to the button */
+    content: "";
+    position: absolute;
+    top: 5px; /* move it down because of rounded corners */
+    ;
+    width: 22px; /* same as height */
+    ;
+    height: 22px; /* button_outer_height / sqrt(2) */
+    ;
+    background: inherit;
+    /* use parent background */ border: inherit;
+    /* use parent border */ border-left-color: transparent; /* hide left border */
+    ;
+    border-bottom-color: transparent; /* hide bottom border */
+    ;
+    border-radius: 0px 4px 0px 0px;
+    /* round arrow corner, the shorthand property doesn't accept "inherit" so it is set to 4px */ -webkit-border-radius: 0px 4px 0px 0px;
+    -moz-border-radius: 0px 4px 0px 0px;
+  }
+
+.btn-arrow-right:before, .btn-arrow-right:after {
+  transform: rotate(45deg); /* rotate right arrow squares 45 deg to point right */
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+}
+
+.btn-arrow-left:before, .btn-arrow-left:after {
+  transform: rotate(225deg); /* rotate left arrow squares 225 deg to point left */
+  -webkit-transform: rotate(225deg);
+  -moz-transform: rotate(225deg);
+  -o-transform: rotate(225deg);
+  -ms-transform: rotate(225deg);
+}
+
+.btn-arrow-right:before, .btn-arrow-left:before {
+  /* align the "before" square to the left */
+  left: -11px;
+}
+
+.btn-arrow-right:after, .btn-arrow-left:after {
+  /* align the "after" square to the right */
+  right: -11px;
+}
+
+.btn-arrow-right:after, .btn-arrow-left:before {
+  /* bring arrow pointers to front */
+  z-index: 1;
+}
+
+.btn-arrow-right:before, .btn-arrow-left:after {
+  /* hide arrow tails background */
+  background-color: #e6e7e8;
+}
+a.btn.btn-default.availabilityMonthButton {
+  padding-left: 3px;
+  padding-right: 3px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  margin-bottom: 1px !important;
+  margin-top: 0 !important;
+  min-width: 64px !important;
+}
+
+.mobileLogo {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.propertyPageActionButtons button {
+  padding: 6px 9px;
+}
+
+.propertyListButton {
+  margin-top: 3px;
+}
+
+.callUsTodayMobile {
+  text-align: center;
+  color: #02143B;
+  font-size: 18px;
+  max-width:394px;
+  margin:0 auto;
+  margin-top:15px;
+}
+#propertyPageContent hr {
+  margin-top:12px;
+  margin-bottom:12px;
+}
+
+.caret-right {
+  transform: rotate(-90deg);
+}
+
+.propertyGalleryActionCol a {
+  color: #fff;
+}
+
+a.cb-policy {
+  background-color: #85754f !important;
+  border-color: #85754f !important;
+  border-radius: 0 !important;
+}
+
+  a.cb-policy:hover {
+    border-color: #756746 !important;
+    background-color: #756746 !important;
+  }
+
+a.cb-enable {
+  background-color: #02143B !important;
+  border-color: #8F7A34 !important;
+  border-radius: 0 !important;
+}
+
+  a.cb-enable:hover {
+    border-color: #122b40 !important;
+    background-color: #204d74 !important;
+  }
+
+#cookie-bar {
+  background-color: #EBEBEB !important;
+  color: #03143a !important;
+}
+
+.propertyRefineSearchContainer {
+  display: none;
+}
+
+ul#propertyNavList li {
+  display: inline-block;
+  border-right: 1px solid #9c9c9c;
+  padding: 0 6px;
+}
+
+ul.wowFactorsBullets li {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 0.5;
+}
+
+  ul.wowFactorsBullets li.wowFactorBulletEndOfLine:after {
+    content: "*";
+    font-size: 16px;
+    margin-left: 3px;
+    line-height: 0.5;
+  }
+
+  ul.wowFactorsBullets li:before {
+    content: "*";
+    font-size: 16px;
+    line-height: 0.5;
+  }
+
+ul.wowFactorsBullets {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+  visibility: hidden;
+}
+
+ul#propertyNavList li a {
+  color: #fff;
+}
+
+  ul#propertyNavList li a:hover, ul#propertyNavList li a:focus {
+    text-decoration: underline;
+  }
+
+.pageContent {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+  .pageContent .componentOutput {
+    margin-left: -30px;
+    margin-right: -30px;
+  }
+
+.headerLogoSection {
+  overflow: hidden;
+}
+
+.tooltip-inner {
+  background-color: #03143a !important;
+}
+
+.btn-gold {
+  color: #fff;
+  border-color: #85754f;
+  background-color: #85754f;
+}
+
+  .btn-gold:hover, .btn-gold:focus {
+    background-color: #756746;
+    border-color: #756746;
+    color: #fff;
+  }
+
+.refineFacilitiesCloseButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #000;
+  border-radius: 20px;
+  border: 1px solid #000;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 17px;
+}
+
+.mobileContactBar {
+  padding-top: 5px;
+  letter-spacing: -0.4px;
+}
+
+  .mobileContactBar div {
+    display: inline-block;
+  }
+
+#propertyNavList a:hover, #propertyNavList a:focus {
+  text-decoration: none;
+}
+
+.PropertySearchDateFrom[readonly], .PropertySearchDateFrom[disabled], .PropertySearchDateTo[readonly], .PropertySearchDateTo[disabled] {
+  background-color: #fff;
+}
+
+.ui-datepicker {
+  z-index: 9999 !important;
+}
+
+a {
+  color: #02143A;
+}
+
+button.multiselect.dropdown-toggle {
+  text-transform: initial;
+}
+
+.moreContent {
+  display: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #02143A;
+}
+
+.pageContainer {
+  display: inline-block;
+  margin: auto;
+  width: 100%;
+}
+
+.body-content {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.navigationBar {
+  padding-top: 5px;
+  padding-bottom: 0;
+  font-size: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+}
+
+  h1 small, h2 small, h3 small, h4 small, h5 small, h6 small, .h1 small, .h2 small, .h3 small, .h4 small, .h5 small, .h6 small, h1 .small, h2 .small, h3 .small, h4 .small, h5 .small, h6 .small, .h1 .small, .h2 .small, .h3 .small, .h4 .small, .h5 .small, .h6 .small {
+    color: #85754f;
+  }
+
+.form-group-select {
+  position: relative;
+}
+
+.form-control:focus {
+  border: 1px solid #ccc;
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.form-group-select:after {
+  content: '<>';
+  font: 20px "Consolas", monospace;
+  color: #03143a;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  right: 0px;
+  top: 0;
+  height: 32px;
+  width: 33px;
+  padding-top: 7px;
+  padding-right: 4px;
+  padding-bottom: 0px;
+  padding-left: 6px;
+  border-bottom: 1px solid #ccc;
+  position: absolute;
+  pointer-events: none;
+  line-height: 1;
+}
+
+.form-group-select select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+  .form-group-select select::-ms-expand {
+    display: none;
+  }
+
+.form-control::-webkit-input-placeholder {
+  color: #03143a;
+}
+
+.form-control::-moz-placeholder {
+  color: #03143a;
+}
+
+.form-control:-ms-input-placeholder {
+  color: #03143a;
+}
+
+.form-control:-moz-placeholder {
+  color: #03143a;
+}
+
+.headerContainer {
+  background-color: #EBEBEB;
+  position: relative;
+  position: fixed;
+  top: 0;
+  z-index: 2000;
+  width: 100%;
+}
+
+  .headerContainer > .container > .headerLogoSection > div.row > div {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+#headerContactContainer div > p {
+  text-align: right;
+  line-height: 100%;
+}
+
+#headerContactContainer > p:nth-child(n+2) {
+  margin-bottom: 15px;
+}
+
+.btn-SearchProperties {
+  float: right;
+}
+
+.navBarContainer {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  background-color: #EBEBEB;
+}
+
+.topImagePlaceholder {
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  position: relative;
+  background-position: center center;
+}
+
+  .topImagePlaceholder .container {
+    height: 500px;
+    position: relative;
+  }
+
+#keyInfo * {
+  text-align: center !important;
+}
+
+.topImagePlaceholder .topImageOverlay {
+  position: absolute;
+  bottom: 0;
+  width: 370px;
+  padding: 16px;
+  background-color: rgba(3, 20, 58,0.8);
+  color: #fff;
+  padding-top: 40px;
+}
+
+  .topImagePlaceholder .topImageOverlay span {
+    display: block;
+    color: #85754F;
+    font-weight: bold;
+  }
+
+  .topImagePlaceholder .topImageOverlay i {
+    display: block;
+  }
+
+  .topImagePlaceholder .topImageOverlay button {
+    margin-top: 10px;
+  }
+
+.introText {
+  background-color: #85754f;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #fff;
+  margin-top: 15px;
+  margin-left: -30px;
+  margin-right: -30px;
+}
+
+  .introText h1 {
+    margin-top: 0;
+    font-size: 24px;
+  }
+
+  .introText p {
+    margin-bottom: 0;
+  }
+
+div.propertySearchBox {
+  background-color: #03143a;
+  padding: 30px;
+  color: #fff;
+  position: relative;
+}
+
+.facilitiesDropdownMenu {
+  border-top: 0;
+  margin-top: 0;
+  width: 248px;
+  padding: 10px;
+  overflow-y: auto;
+  padding-top: 7px;
+  position: absolute;
+}
+
+  .facilitiesDropdownMenu label {
+    margin-bottom: 0;
+  }
+
+.multiselect-container label {
+  color: #03143a !important;
+  font-weight: bold !important;
+}
+
+.propertySearchBox h3 {
+  float: left;
+}
+
+div.propertySearchBox a {
+  color: #fff;
+  float: left;
+  text-transform: initial;
+}
+
+.multiselect-container.dropdown-menu > li a, .multiselect-container.dropdown-menu > .active a {
+  background-color: transparent;
+  width: 100%;
+}
+
+.multiselect-container.dropdown-menu a:focus {
+  outline: 0;
+}
+
+.multiselect-container.dropdown-menu {
+  width: auto;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+.propertySearchCol {
+  padding-right: 2px;
+}
+
+.propertyTypeChooser {
+  padding-left: 0;
+}
+
+  .propertyTypeChooser .row div[class^="col"] {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .propertyTypeChooser .row {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+.propertyTypeBox {
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+.propertySearchBox h3 {
+  margin-bottom: 25px;
+}
+
+.propertyTypeBoxImage {
+  background-image: url(/images/1.jpg);
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  height: 170px;
+}
+
+.propertyTypeBoxTitle {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255,0.8);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+  border-bottom: 2px solid #85754f;
+  font-weight: bold;
+}
+
+.propertyNavigationSection {
+  margin-top: 15px;
+}
+
+.text-navy {
+  color: #03143a;
+}
+
+.text-gold {
+  color: #85754f;
+}
+
+.text-italic {
+  font-style: italic;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+h3.lineHeading,
+div.lineHeading,
+h1.lineHeading,
+h4.lineHeading {
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-color: #85754f;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: inline-block;
+  margin-top: 0;
+  position: relative;
+}
+
+h3.crown:before,
+h1.crown:before,
+h4.crown:before,
+div.crown:before {
+  content: "";
+  position: absolute;
+  top: -33px;
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+  left: 50%;
+  margin-left: -20px;
+}
+
+h3.lineHeading.navy.crown:before,
+h1.lineHeading.navy.crown:before,
+h4.lineHeading.navy.crown:before,
+div.lineHeading.navy.crown:before {
+  background-image: url(/images/crown-navy.png);
+}
+
+h3.lineHeading.gold.crown:before,
+h1.lineHeading.gold.crown:before,
+h4.lineHeading.gold.crown:before,
+div.lineHeading.gold.crown:before {
+  background-image: url(/images/crown-gold.png);
+}
+
+.wowHighlightsContainer {
+  margin-top: 15px;
+  padding-top: 40px;
+  padding-bottom: 15px;
+  background-color: #e6e7e8;
+}
+
+.wowHighlightBox {
+  position: relative;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.wowHighlightOverlay {
+  background-color: rgba(3, 20, 58,0.8);
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+  .wowHighlightOverlay h3 {
+    display: block;
+    margin-bottom: 0;
+  }
+
+.zoomImageContainer {
+  overflow: hidden;
+}
+
+.zoomImage {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+}
+
+span.wowFactorBullet {
+  display: inline-block;
+  font-size: 16px;
+}
+
+p.wowFactorsSmall span.wowFactorBullet {
+  font-size: 14px;
+}
+
+.propertyPageDetailsContainer {
+  margin-left: 0;
+  background-color: #03143a;
+  min-height: 140px;
+}
+
+  .propertyPageDetailsContainer .propertyPageDetails {
+    color: #fff;
+    display: inline-block;
+    padding-bottom: 0;
+    background-color: inherit;
+  }
+
+.propertyPageDetails {
+  background-color: #03143a;
+  color: #fff;
+  display: inline-block;
+  padding-bottom: 44px;
+}
+
+  .propertyPageDetails h3.lineHeading {
+    font-size: 20px;
+    margin-top: 40px;
+  }
+
+.propertyPagePropertyName {
+  text-transform: uppercase;
+  margin-bottom: 0;
+  font-size: 24px;
+}
+
+.propertyPageDetailsCol {
+  padding-top: 15px;
+  padding-right: 15px;
+}
+
+.propertyPageTabsCol {
+  padding-top: 15px;
+  padding-left: 0;
+  padding-right: 15px !important;
+}
+
+.propertyImagesList {
+  list-style-type: none;
+  background-color: #02143B;
+  padding-left: 0;
+  text-align: left;
+  font-size: 0;
+}
+
+  .propertyImagesList li {
+    display: inline-block;
+    margin: 0 5px;
+    width: calc(20% - 10px);
+    vertical-align: top;
+    color: #fff;
+    cursor: pointer;
+  }
+
+    .propertyImagesList li:first-child {
+      margin-left: 0;
+      width: calc(20% - 5px);
+    }
+
+    .propertyImagesList li:last-child {
+      margin-right: 0;
+      width: calc(20% - 5px);
+      font-size: 16px;
+    }
+
+      .propertyImagesList li:last-child p {
+        margin-left: -10px;
+        text-align: center;
+        padding-top: 16px;
+        text-transform: uppercase;
+      }
+
+.nav-tabs {
+  border-bottom: 0;
+}
+
+  .nav-tabs > li {
+    background-color: #02143B;
+  }
+
+.propertyPageTabsContent .nav-tabs li {
+  width: 25%;
+}
+
+.nav-tabs > li > a {
+  color: #fff;
+  border: 0;
+  margin-right: 0;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  border-bottom: 4px solid #02143B;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus, .nav-tabs > li > a:hover, .nav-tabs > li > a:focus {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 4px solid #85754f;
+  color: #fff;
+}
+
+.nav-tabs li:first-child a, .nav-tabs > li > a, .nav-tabs li:last-child a {
+  padding-bottom: 1px;
+  padding-top: 5px;
+}
+
+.nav-tabs > li.active > a {
+  padding-top: 5px;
+  padding-bottom: 1px;
+}
+
+.nav-tabs > li.active {
+  background-color: #85754f;
+}
+
+body.property-overview .propertyPageTabsContent {
+  background-color: #f7f7f8;
+}
+
+.propertyPageContent {
+  text-align: left;
+  padding: 20px;
+}
+
+  .propertyPageContent h4 {
+    text-transform: uppercase;
+  }
+
+  .propertyPageContent strong {
+    color: #02143B;
+  }
+
+.propertyActivityImage {
+  min-height: 250px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  background-color: #fff;
+}
+
+.propertyActivityImageOverlay {
+  width: 100%;
+  position: absolute;
+  height: 55px;
+  text-align: center;
+  top: 0;
+  background-color: rgba(3, 20, 58,0.8);
+}
+
+.activityDescriptionCol {
+  padding-left: 0;
+  min-height: 250px;
+  background-color: #fff;
+}
+
+.propertyActivityImageOverlay h4 {
+  color: #fff;
+  margin-top: 9px;
+  text-transform: uppercase;
+}
+
+.propertyActivityDescription {
+  text-align: left;
+  padding: 15px;
+}
+
+.propertyActivityRow {
+  margin-bottom: 15px;
+}
+
+.testimonialBox {
+  background-color: #f7f7f8;
+  margin-left: 0;
+  margin-right: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 15px;
+}
+
+  .testimonialBox .testimonialContainer {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+.testimonialMessage {
+  font-family: 'Cookie', cursive;
+  font-size: 28px;
+}
+
+.testimonialBox:nth-child(odd) {
+  color: #02143A;
+}
+
+.testimonialBox:nth-child(even) {
+  color: #85754f;
+}
+
+.aboutUsSection {
+  background-color: #e6e7e8;
+  padding-top: 15px;
+}
+
+.propertyPagesMobileNavigation select {
+  background-color: #03143a;
+  color: #FFFFFF;
+  border-color: #85754F;
+  font-size: 15px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.propertyPagesMobileNavigation:after {
+  color: #FFFFFF;
+}
+
+#contactModal .modal-header, #sendFriendModal .modal-header, #propertyEnquiryModal .modal-header {
+  border-bottom: 0;
+}
+
+#contactModal .modal-footer, #sendFriendModal .modal-footer, #propertyEnquiryModal .modal-footer {
+  border-top: 0;
+  background-color: transparent;
+}
+
+#contactModal .modal-body, #sendFriendModal .modal-body, #propertyEnquiryModal .modal-body {
+  background-color: #e6e7e8;
+  color: #03143a;
+  font-size: 15px;
+}
+
+.theWowHouseCheckbox {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.wowHouseStyleCheckbox {
+  width: 28px;
+  height: 28px;
+  border: 1px solid #02143A;
+  cursor: pointer;
+  font-size: 18px;
+  padding-left: 3px;
+  padding-top: 1px;
+  background-color: #FFFFFF;
+}
+
+.agreementStatement p {
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 0;
+  width: 90%;
+  margin-left: 15px;
+  font-size: 12px;
+}
+
+.agreementStatement {
+  margin-bottom: 10px;
+}
+
+.propertyAvailabilitySelectorSection button {
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.propertyAvailabilitySelectorSection p {
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.propertyAvailabilitySelectorSection {
+  padding: 10px;
+  text-align: left;
+  background-color: #f7f7f8;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.propertyCalendarExtraInfo {
+  padding: 0 100px;
+  text-align: left;
+  background-color: #f7f7f8;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+  .propertyCalendarExtraInfo table {
+    margin-bottom: 20px;
+  }
+
+    .propertyCalendarExtraInfo table > tbody > tr:nth-of-type(odd) {
+      background-color: #f9f9f9;
+    }
+
+    .propertyCalendarExtraInfo table > tbody > tr > td {
+      padding: 5px;
+      line-height: 1.42857143;
+      vertical-align: top;
+      border-top: 1px solid #ddd;
+    }
+
+.calendarSection {
+  background-color: #f7f7f8;
+}
+
+.calendarBox {
+  width: 700px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding-bottom: 15px;
+  padding-top: 6px;
+}
+
+.calendarMonthName {
+  background-color: #03143a;
+  color: #fff;
+  text-transform: uppercase;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.btn-expandThingToDo {
+  display: block;
+}
+
+.calendarMonthName h3 {
+  margin-bottom: 0;
+  display: block;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.calendarMonthView {
+  width: 247px;
+  display: inline-block;
+}
+
+.calendarPricingCategories {
+  display: inline-block;
+}
+
+.calendarTable, .pricingCategoriesTable {
+  width: 100%;
+  margin-top: 1px;
+}
+
+  .pricingCategoriesTable td.availableSlot {
+    cursor: pointer;
+  }
+
+  .calendarTable .availableFirstPart {
+    background: #ffffff;
+    background: -moz-linear-gradient(-35deg, #2A8130 50%, #2A8130 50%, #A31B17 51%);
+    background: -webkit-linear-gradient(-35deg, #2A8130 50%,#2A8130 50%,#A31B17 51%);
+    background: linear-gradient(145deg, #2A8130 50%,#2A8130 50%,#A31B17 51%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#A31B17', endColorstr='#c1133d',GradientType=1);
+  }
+
+  .calendarTable .availableLastPart {
+    background: #c1133d;
+    background: -moz-linear-gradient(-35deg, #A31B17 50%, #2A8130 51%, #2A8130 51%);
+    background: -webkit-linear-gradient(-35deg, #A31B17 50%,#2A8130 51%,#2A8130 51%);
+    background: linear-gradient(145deg, #A31B17 50%,#2A8130 51%,#2A8130 51%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#A31B17', endColorstr='#2A8130',GradientType=1);
+  }
+
+  .calendarTable .bookedDay {
+    background-color: #A31B17;
+    color: #fff;
+  }
+
+  .pricingCategoriesTable th, .calendarTable th {
+    background-color: #404040;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+
+  .calendarTable td {
+    background-color: #2A8130;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border: 2px solid #e6e7e8;
+    border-top: 0;
+    height: 25px;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .pricingCategoriesTable td {
+    background-color: #e6e7e8;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    border: 2px solid #f7f7f8;
+    border-top: 0;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    height: 25px;
+  }
+
+  .pricingCategoriesTable tr.selected td {
+    background-color: #FFF801;
+    color: #02143a;
+  }
+
+#keyInfo p {
+  text-align: center;
+}
+
+#keyInfo h4, #mobileKeyInfo h4 {
+  margin-bottom: 6px;
+  margin-top: 20px;
+  color: #85754f;
+}
+
+.sendToAFriendBox {
+  background-color: #f7f7f8;
+  padding: 5px;
+  margin-bottom: 15px;
+}
+
+  .sendToAFriendBox div {
+    display: block;
+    border: 1px solid #85754f;
+    padding: 5px;
+    color: #85754f
+  }
+
+.sendFriendDetails {
+  border: 1px solid #85754f;
+  padding: 5px;
+}
+
+  .sendFriendDetails a {
+    color: #85754f
+  }
+
+#headerContactContainer {
+  padding-right: 0;
+}
+
+.modal {
+  z-index: 3000;
+}
+
+.modal-backdrop {
+  z-index: 2500;
+}
+
+.pageGoToTop {
+  display: none;
+  position: fixed;
+  right: 30px;
+  width: 38px;
+  bottom: 20px;
+  background-color: #02143B;
+  color: #fff;
+  text-align: center;
+  line-height: 0.9;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+#breadcrumbContainer {
+  font-size: 12px;
+}
+
+.greyedOutCalendarDay {
+  opacity: 0;
+  border: 0 !important;
+}
+
+.offersList {
+  background-color: #e6e7e8;
+  padding-top: 10px;
+}
+
+.navbar-search-collapse {
+  background-color: rgba(3, 20, 58, 0.8);
+  margin-left: -15px;
+  margin-right: -15px;
+  padding: 15px;
+  color: #fff;
+}
+
+.propertySearchBox select, .propertySearchBox input, .propertySearchBox button.multiselect {
+  font-weight: 600;
+}
+
+.menuPropertySearch select, .menuPropertySearch input, .menuPropertySearch button.multiselect {
+  font-weight: 600;
+}
+
+.pricingCategoriesTable td.specialOffer {
+  background-color: #85754f;
+  color: #f7f7f8;
+  position: relative;
+  cursor: pointer;
+}
+
+  .pricingCategoriesTable td.specialOffer:before {
+  }
+
+.calendarMonthName {
+  background-color: transparent;
+}
+
+  .calendarMonthName h3 {
+    padding-bottom: 8px;
+    padding-top: 8px;
+    margin: 0;
+    text-align: left;
+    color: #03143a
+  }
+
+.footerContainer {
+  background-color: #F4F4F4;
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 0;
+}
+
+  .footerContainer a {
+    color: #02143B;
+  }
+
+  .footerContainer table tr td {
+    text-align: left;
+    padding-right: 15px;
+  }
+
+#footerSiteLinksContainer > div {
+  padding-bottom: 5px;
+}
+
+#footerContactTable {
+  margin-top: 15px;
+  margin-left: 0;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+@media (max-width:767px) {
+  #footerContactTable {
+    margin-left: 15px;
+  }
+}
+
+.twitterSmall {
+  max-height: 14px;
+}
+
+#copyrightInfoContainer {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: 1px #85754f solid;
+  margin-top: 15px;
+}
+
+  #copyrightInfoContainer > div {
+    display: inline-block;
+  }
+
+    #copyrightInfoContainer > div:first-child {
+      float: left;
+    }
+
+    #copyrightInfoContainer > div:nth-child(n+2) {
+      float: right;
+    }
+
+.navbar-inverse {
+  background-color: transparent;
+}
+
+.modal-header .close {
+  display: none;
+  color: #FFFFFF;
+  filter: alpha(opacity=100);
+  opacity: 1;
+}
+
+  .modal-header .close:hover {
+    color: #FFFFFF;
+    filter: alpha(opacity=50);
+    opacity: .5;
+  }
+
+.navbar-nav > li > .dropdown-menu {
+  text-align: center;
+  border-radius: 0;
+  border: 0;
+  background-color: rgba(235,235,235,0.8);
+  box-shadow: none;
+}
+
+  .navbar-nav > li > .dropdown-menu a {
+    font-size: 20px;
+    font-weight: 700;
+    color: #02143B;
+    font-family: 'Open Sans',Arial,sans-serif;
+  }
+
+.navbar-nav li a {
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 40px;
+  padding-right: 40px;
+  text-transform: uppercase;
+}
+
+.navbar-nav li:first-child a {
+  padding-left: 0;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: #02143B;
+  font-weight: 600;
+  padding-bottom: 7px;
+}
+
+  .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+    color: #02143B;
+    background-color: transparent;
+  }
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: bottom;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+.navbar {
+  min-height: 22px;
+  border: none;
+  margin-bottom: 0;
+}
+
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+  color: #02143B;
+  background-color: transparent;
+}
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+  color: #02143B;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.form-control {
+  border-radius: 0;
+  padding: 6px;
+  color: #02143A;
+}
+
+input.PropertySearchDateFrom::-webkit-input-placeholder {
+  color: #02143A !important;
+}
+
+input.PropertySearchDateTo::-webkit-input-placeholder {
+  color: #02143A !important;
+}
+
+input.PropertySearchDateFrom:-moz-placeholder {
+  color: #02143A !important;
+}
+
+input.PropertySearchDateTo:-moz-placeholder {
+  color: #02143A !important;
+}
+
+input.PropertySearchDateFrom::-moz-placeholder {
+  color: #02143A !important;
+}
+
+input.PropertySearchDateTo::-moz-placeholder {
+  color: #02143A !important;
+}
+
+input.PropertySearchDateFrom:-ms-input-placeholder {
+  color: #02143A !important;
+}
+
+input.PropertySearchDateTo:-ms-input-placeholder {
+  color: #02143A !important;
+}
+
+input.PropertySearchDateFrom::placeholder {
+  color: #02143A !important;
+}
+
+input.PropertySearchDateFrom::placeholder {
+  color: #02143A !important;
+}
+
+.btn {
+  border-radius: 0;
+  text-transform: uppercase;
+}
+
+.btn-primary {
+  background-color: #02143B;
+  border-color: #8F7A34;
+  border-width: 1px;
+}
+
+.btn-default {
+  color: #02143B;
+  border-color: #02143B;
+}
+
+.btn-transparentGold {
+  background-color: transparent;
+  color: #85754f;
+  border: 1px solid #85754f;
+  text-transform: uppercase;
+}
+
+.btn-transparentGold:hover, .btn-transparentGold:focus {
+  color: #85754f;
+}
+
+.navBarContainer {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.headerContainer {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.navbar-brand {
+  margin-left: 0;
+}
+
+.closeButton {
+  color: #fff;
+  border-radius: 20px;
+  border: 1px solid #fff;
+  width: 20px;
+  line-height: 16px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.menuPropertySearch {
+  display: none;
+  background-color: rgba(3, 20, 58,1);
+  width: 560px;
+  position: fixed;
+  padding: 30px;
+  z-index: 2001;
+}
+
+  .menuPropertySearch .closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #fff;
+    border-radius: 20px;
+    border: 1px solid #fff;
+    width: 20px;
+    line-height: 16px;
+    height: 20px;
+    cursor: pointer;
+  }
+
+.propertyGalleryCloseButton {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #fff;
+  width: 40px;
+  line-height: 16px;
+  height: 40px;
+  padding: 10px;
+  cursor: pointer;
+  background-color: rgba(3, 20, 58,0.8);
+}
+
+.contactUsCloseButton .closeButton {
+  color: #fff;
+  border: 1px solid #fff;
+  width: 30px;
+  height: 30px;
+  font-size: 26px;
+  padding: 5px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  line-height: 12px;
+}
+
+.sendFriendCloseButton .closeButton {
+  color: #fff;
+  border: 1px solid #fff;
+  width: 30px;
+  height: 30px;
+  font-size: 26px;
+  padding: 5px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  line-height: 12px;
+}
+
+.propertyGalleryCloseButton > .closeButton {
+  color: #fff;
+  border-radius: 20px;
+  border: 1px solid #fff;
+  width: 20px;
+  line-height: 16px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.propertySearchBox > .closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #fff;
+  border-radius: 20px;
+  border: 1px solid #fff;
+  width: 20px;
+  line-height: 16px;
+  height: 20px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.pageHeaderImage {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+  .pageHeaderImage .pageTitle {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: rgba(3, 20, 58,0.8);
+    color: #fff;
+    text-transform: uppercase;
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+
+    .pageHeaderImage .pageTitle h1 {
+      margin-bottom: 0;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      width: 400px;
+      font-size: 24px;
+    }
+
+      .pageHeaderImage .pageTitle h1:before {
+        top: -26px;
+      }
+
+.pageTitle {
+  background-color: rgb(3, 20, 58);
+  color: #fff;
+  text-transform: uppercase;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+  .pageTitle h1 {
+    margin-bottom: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 400px;
+    font-size: 24px;
+  }
+
+    .pageTitle h1:before {
+      top: -26px;
+    }
+
+.propertyInfoOuter {
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+}
+
+.propertyImage {
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+.propertyImageCell {
+  width: 40%;
+  height: 100%;
+  position: relative;
+  display: inline-block;
+  float: left;
+}
+
+.propertyListSlider .slick-list, .propertyListSlider .slick-track {
+  height: 100% !important;
+}
+
+.propertyImageControls {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: rgba(3, 20, 58, 0.8);
+  font-size: 16px;
+}
+
+.propertyImageControlPrevious, .propertyImageControlNext {
+  display: inline-block;
+  color: #fff;
+  cursor: pointer;
+}
+
+.propertyImageControlPrevious {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.propertyImageControlNext {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.propertyInfo {
+  width: 60%;
+  min-height: 278px;
+  text-align: left;
+  padding: 15px 30px 15px 30px;
+  float: right;
+  display: inline-block;
+}
+
+@media (max-width:767px) {
+  .propertyInfo {
+    padding: 15px 30px 25px 30px;
+  }
+}
+
+.propertyInfo h4 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+.propertyRow {
+  background-color: #f7f7f8;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 10px;
+}
+
+  .propertyRow .col-lg-8 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+.propertiesList {
+  background-color: #e6e7e8;
+  padding-top: 10px;
+}
+
+.propertyWowFactors {
+  margin-top: 35px !important;
+  margin-bottom: 5px;
+}
+
+.propertyActions button {
+  text-align: center;
+  margin: 0 auto;
+  width: 150px;
+  margin-top: 3px;
+}
+
+.propertyPage {
+  background-color: #e6e7e8;
+  padding-bottom: 15px;
+}
+
+.propertyPageNav {
+  margin-bottom: 15px;
+}
+
+.pressCoverage {
+  margin-left: 15px;
+  margin-right: 15px;
+  background-color: #e6e7e8;
+}
+
+  .pressCoverage h3 {
+    margin-top: 45px;
+    padding-left: 100px;
+    padding-right: 100px;
+    text-transform: uppercase;
+  }
+
+  .pressCoverage h4 {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+  }
+
+.pressCoverageImage {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 300px;
+  margin: 0 auto;
+  background-position: center center;
+}
+
+.propertyPageActionButtons {
+  text-align: right;
+  padding-right: 0;
+  padding-left: 15px;
+}
+
+  .propertyPageActionButtons p {
+    display: inline-block;
+    margin-right: 5px;
+    font-size: 16px;
+    margin-bottom: 0;
+    vertical-align: middle;
+  }
+
+.recentlyViewedPropertyImage {
+  height: 100px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.recentlyViewedPropertyImageOverlay {
+  background-color: rgba(3, 20, 58,0.8);
+  color: #fff;
+  height: 100%;
+}
+
+.recentlyViewedBox {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 30px;
+}
+
+.relatedPropertyImage {
+  height: 150px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.relatedPropertyBox {
+  cursor: pointer;
+}
+
+.fade-in {
+  opacity: 0;
+  -webkit-transition: opacity .5s linear;
+  -o-transition: opacity .5s linear;
+  transition: opacity .5s linear;
+}
+
+  .fade-in.in {
+    opacity: 1;
+  }
+
+.modal-content {
+  background-color: #03143a;
+  color: #fff;
+  border-radius: 0;
+}
+
+.modal-header {
+  padding: 5px;
+  border-bottom: 1px solid #85754f;
+}
+
+.modal-footer {
+  padding: 20px;
+  text-align: right;
+  border-top: 1px solid #85754f;
+  background-color: #162549;
+}
+
+.propertyGalleryImageContainer img {
+  max-width: 100%;
+  max-height:100%;
+}
+
+.propertyGalleryImageSlide {
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+.propertyGalleryNextButton {
+  position: absolute;
+  top: 50%;
+  margin-top: -20px;
+  right: 0;
+  color: #fff;
+  width: 40px;
+  line-height: 16px;
+  height: 40px;
+  padding: 10px;
+  cursor: pointer;
+  background-color: rgba(3, 20, 58,0.8);
+}
+
+  .propertyGalleryNextButton > .nextButton, .propertyGalleryPrevButton > .prevButton {
+    color: #fff;
+    border-radius: 20px;
+    width: 20px;
+    line-height: 16px;
+    height: 20px;
+    cursor: pointer;
+    font-size: 17px;
+  }
+
+.propertyGalleryPrevButton {
+  position: absolute;
+  top: 50%;
+  margin-top: -20px;
+  left: 0;
+  color: #fff;
+  width: 40px;
+  line-height: 16px;
+  height: 40px;
+  padding: 10px;
+  cursor: pointer;
+  background-color: rgba(3, 20, 58,0.8);
+}
+
+.luxuryHousesText {
+  background-color: #85754f;
+  color: #fff;
+  margin-top: 15px;
+  text-align: left;
+}
+
+  .luxuryHousesText > .container > h1 {
+    margin-top: 0;
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+
+  .luxuryHousesText > .container button {
+    text-align: center;
+    text-transform: uppercase;
+    display: block;
+    margin: 0 auto;
+  }
+
+.contentBox {
+  background-color: #fff;
+  margin-bottom: 15px;
+  padding-top: 20px;
+}
+
+  .contentBox > .titleSection {
+    background-color: #02143A;
+    color: #fff;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+    .contentBox > .titleSection > h4 {
+      display: block;
+      margin-bottom: 0;
+    }
+
+  .contentBox > .contentBoxContent {
+    padding: 30px;
+    text-align: left;
+  }
+
+body.about-us .testimonialsSliderContainer {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.featuredPropertyDetails {
+  text-align: left;
+}
+
+  .featuredPropertyDetails .featuredPropertyPressName {
+    margin-bottom: 0;
+    font-family: 'Raleway';
+  }
+
+.featuredPropertyPressDate {
+  font-weight: bold;
+}
+
+.featuredPropertyNameAddress {
+  margin-bottom: 0;
+}
+
+.featuredPropertyDetails {
+  padding: 15px 15px 15px 0;
+}
+
+.featuredPropertyBox {
+  margin-left: 15px;
+  margin-right: 15px;
+  border: 1px solid #85754f;
+}
+
+.featuredPropertyImage {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.previousArticlesSection {
+  background-color: #e6e7e8;
+  margin-top: 30px;
+}
+
+  .previousArticlesSection h4 {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+.previousArticlesSlider {
+  background-color: #f7f7f8;
+  padding: 20px 30px;
+}
+
+.nav-tabs > li.active > a {
+  font-weight: bold;
+}
+
+.pressCoverage {
+  background-color: #dcdddf;
+  margin-bottom: 15px;
+}
+
+.pressCoverageBlock {
+  margin-bottom: 10px;
+}
+
+#sendFriendModal .control-label {
+  padding-left: 15px;
+}
+
+#sendFriendModal button {
+  margin-left: 0;
+}
+
+@media (min-width:1201px) {
+  .pageContainer {
+    padding-top: 131px;
+  }
+
+  .wowHighlightBox, .wowHighlightBox .zoomImage {
+    height: 310px;
+  }
+
+  .wowHighlightOverlay {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+    .wowHighlightOverlay h3 {
+      font-size: 18px;
+    }
+
+  #propertyGalleryModal .propertyPageActionButtons p {
+    font-size: 14px;
+  }
+
+  .propertyGalleryActionCol {
+    padding-left: 0;
+  }
+
+  body.in-the-press .pageTitle {
+    margin-top: 33px;
+  }
+
+  .nav-tabs li:first-child a, .nav-tabs > li > a, .nav-tabs li:last-child a {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #contactModal .modal-body, #sendFriendModal .modal-body, #propertyEnquiryModal .modal-body {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+
+  .propertyPageDetailsCol > .propertyPageDetails {
+    margin-left: 15px;
+  }
+
+  .calendarMonthView {
+    float: left;
+    margin-right: 3px;
+  }
+
+  .calendarBox {
+    width: 700px;
+  }
+
+  .calendarPricingCategories {
+    width: 447px;
+    margin-left: 3px;
+  }
+
+  .propertyRow .col-lg-8 {
+    border-right: 4px solid #e6e7e8;
+  }
+
+  .pageHeaderImage {
+    height: 530px;
+  }
+
+  .navbar-nav > li:first-child a {
+    padding-left: 0;
+  }
+
+  .navbar-nav > li:last-child a {
+    padding-right: 0;
+  }
+
+  .propertyPageDetails {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+    .propertyPageDetails hr {
+      margin-left: -20px;
+      margin-right: -20px;
+      border-top-color: #85754f;
+    }
+
+  .sendToAFriendBox {
+    margin-left: -30px;
+    margin-right: -30px;
+  }
+
+  .activityDescriptionCol {
+    margin-left: -15px;
+  }
+
+  #headerContactContainer {
+    padding-top: 29px;
+  }
+}
+
+@media (max-width:1200px) {
+  .navbar-nav li a {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+
+  .navbar-nav > li:first-child a {
+    padding-left: 0;
+  }
+
+  .navbar-nav > li:last-child a {
+    padding-right: 0;
+  }
+
+  .propertyNavSectionContainer {
+    width: 100%;
+  }
+
+  .propertySearchCol {
+    padding-left: 0;
+  }
+
+  .propertyTypeChooser {
+    padding-right: 0;
+  }
+
+  .pageContainer {
+    padding-top: 131px;
+  }
+
+  .wowHighlightBox, .wowHighlightBox .zoomImage {
+    height: 225px;
+  }
+
+  .wowHighlightOverlay {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+    .wowHighlightOverlay h3 {
+      font-size: 16px;
+    }
+
+  div.propertySearchBox {
+    max-width: 566px;
+    margin: 0 auto;
+  }
+
+  div.propertyNavigationSection .propertySearchContainer {
+    background-color: #03143a;
+    margin-bottom: 15px;
+  }
+
+  #propertyGalleryModal .propertyPageActionButtons button {
+    margin-top: 6px;
+  }
+
+  #propertyGalleryModal .propertyPageActionButtons p {
+    font-size: 13px;
+  }
+
+  body.in-the-press .pageTitle {
+    margin-top: 43px;
+  }
+
+  .nav-tabs li:first-child a, .nav-tabs > li > a, .nav-tabs li:last-child a {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #contactModal .modal-body, #sendFriendModal .modal-body, #propertyEnquiryModal .modal-body {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .propertyPageDetailsCol > .propertyPageDetails {
+    margin-left: 15px;
+  }
+
+  .propertyPageTabsCol > .propertyPageTabsContent {
+    margin-right: 15px;
+  }
+
+  .propertyPageTabsCol > .propertyPageGalleryBar {
+    margin-right: 15px;
+  }
+
+  .aboutUsColumn1 .contentBox {
+    margin-left: 15px;
+  }
+
+  .aboutUsColumn2 .contentBox {
+    margin-right: 15px;
+  }
+
+  .calendarMonthView {
+    float: left;
+    margin-right: 3px;
+  }
+
+  .calendarBox {
+    width: 700px;
+  }
+
+  .calendarPricingCategories {
+    width: 447px;
+    margin-left: 3px;
+  }
+
+  .pageHeaderImage {
+    height: 375px;
+  }
+
+  .propertyPageDetails {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+    .propertyPageDetails hr {
+      margin-left: -5px;
+      margin-right: -5px;
+      border-top-color: #85754f;
+    }
+
+  .sendToAFriendBox {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+
+  .activityDescriptionCol {
+    margin-left: -15px;
+  }
+
+  #headerContactContainer {
+    padding-top: 35px;
+  }
+
+  .propertyListButtonsContainer {
+    text-align: center;
+  }
+}
+
+@media (max-width:992px) {
+  .navbar-nav li a {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .navigationBar {
+    font-size: 17px;
+    padding-top: 7px;
+  }
+
+    .navigationBar .dropdown-menu li a {
+      font-size: 18px;
+    }
+
+  .multiselect-container > li > a {
+    font-size: 14px !important;
+  }
+
+  .navbar-nav > li:first-child a {
+    padding-left: 0;
+  }
+
+  .navbar-nav > li:last-child a {
+    padding-right: 0;
+  }
+
+  .col-sm-12 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .pageContainer {
+    padding-top: 131px;
+  }
+
+  .wowHighlightBox, .wowHighlightBox .zoomImage {
+    height: 200px;
+  }
+
+  .wowHighlightOverlay {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+    .wowHighlightOverlay h3 {
+      font-size: 14px;
+    }
+
+  #headerLogoContainer {
+    height: 147px;
+  }
+
+  #headerContactContainer {
+    height: 147px;
+    padding-top: 35px;
+  }
+
+  .contactUsCloseButton .closeButton {
+    bottom: 25px;
+  }
+
+  .propertyPageDetailsContainer {
+    margin-left: 0;
+  }
+
+  #propertyGalleryModal .propertyPageActionButtons p {
+    font-size: 11px;
+  }
+
+  body.in-the-press .pageTitle {
+    margin-top: 40px;
+  }
+
+  .propertyPageDetailsCol {
+    padding-top: 0;
+  }
+
+  .mobilePropertyPageDetails {
+    background-color: #03143a;
+    color: #fff;
+    display: inline-block;
+    padding-left: 50px;
+    padding-right: 50px !important;
+    padding-top: 25px;
+    padding-bottom: 10px;
+  }
+
+    .mobilePropertyPageDetails h3.lineHeading {
+      font-size: 20px;
+      margin-top: 40px;
+      margin-bottom: 15px;
+    }
+
+    .mobilePropertyPageDetails hr {
+      margin-left: 0;
+      margin-right: 0;
+      border-top-color: #85754f;
+    }
+
+  #mobileKeyInfo p {
+    text-align: left;
+  }
+
+  .nav-tabs li:first-child a, .nav-tabs > li > a, .nav-tabs li:last-child a {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .activityImageCol {
+    padding-right: 30px;
+  }
+
+    .activityImageCol .propertyActivityImage {
+      border-right: 0;
+    }
+
+  .activityDescriptionCol {
+    padding-left: 30px;
+    background-color: unset;
+  }
+
+  .propertyPageActionButtons > p {
+    display: block;
+  }
+
+  #sendFriendModal .control-label {
+    text-align: left;
+  }
+
+  #contactModal .modal-body, #sendFriendModal .modal-body, #propertyEnquiryModal .modal-body {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .propertyPageDetailsCol > .propertyPageDetails {
+    margin-left: 0;
+  }
+
+  .propertyPageTabsCol > .propertyPageTabsContent {
+    margin-right: 0;
+  }
+
+  .propertyPageTabsCol > .propertyPageGalleryBar {
+    margin-right: 0;
+  }
+
+  .aboutUsColumn1 .contentBox {
+    margin-left: 0;
+  }
+
+  .aboutUsColumn2 .contentBox {
+    margin-right: 0;
+  }
+
+  .calendarBox {
+    width: 700px;
+  }
+
+  .calendarPricingCategories {
+    width: 447px;
+    margin-left: 3px;
+  }
+
+  .pageHeaderImage {
+    height: 375px;
+  }
+
+  .propertyActivityDescription {
+    margin-right: -15px;
+    background-color: #fff
+  }
+
+  #footerSiteLinksContainer {
+    text-align: center;
+  }
+
+  .detailsOfferInfo {
+    bottom: 25px !important;
+  }
+
+  .propertyPageDescRow {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .propertyListButtonsContainer {
+    text-align: center;
+  }
+
+  .agreementStatement {
+    margin-left: 15px;
+  }
+
+  .modalSubmitBtn {
+    margin-right: 15px;
+  }
+
+  .testimonialsText {
+    margin-left: 15px !important;
+    margin-right: 15px !important;
+  }
+
+  .testimonialsTitle {
+    margin-left: 15px !important;
+    margin-right: 15px !important;
+  }
+  .propertyCalendarSelectDateHeading {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .propertyCalendarTextColumn {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+  .propertyAvailabilitySelectorSection {
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+  }
+  #calendarMonthSelection {
+    margin-top: 15px;
+  }
+  .propertyCalendarGuestsText {
+    letter-spacing: -0.3px;
+  }
+}
+
+@media(min-width:768px) {
+  .dropdown-hover:hover .dropdown-menu {
+    display: block;
+  }
+
+  .introText > .container {
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+
+  .wowHighlightsWrapper {
+    padding: 30px
+  }
+}
+
+@media (max-width:767px) {
+  .introText > .container {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  #propertyEnquiryPropertyName {
+    margin-bottom: 10px !important;
+  }
+
+  .propertyPageActionButtons {
+    width: 330px;
+    text-align: center;
+  }
+  body.property-overview #breadcrumbContainer, body.property-things-to-do #breadcrumbContainer, body.property-testimonials  #breadcrumbContainer, body.property-prices-calendar #breadcrumbContainer {
+    text-align:center !important;
+    padding-right:0 !important;
+    padding-left:0 !important;
+  }
+
+  .introText {
+    margin-top:0;
+  }
+
+  .nav li a {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .headerLogoSection {
+    display: none;
+  }
+
+  .navbar-nav > li:first-child a {
+    padding-left: 0;
+  }
+
+  .propertyPageActionButtons {
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+  }
+
+  .navbar-nav > li:last-child a {
+    padding-right: 0;
+  }
+
+  #footerSiteLinksContainer {
+    font-size: 12px;
+  }
+
+  .col-xs-12 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .propertyCalendarTextColumn {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+  .propertyCalendarSelectDateHeading {
+    margin-left: 15px !important;
+    margin-right: 15px !important;
+  }
+
+  .testimonialsText {
+    margin-left: 30px !important;
+    margin-right: 30px !important;
+  }
+
+  .testimonialsTitle {
+    margin-left: 30px !important;
+    margin-right: 30px !important;
+  }
+
+  #footerSiteLinksContainer .col-xs-4 {
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+
+  .pageContainer {
+    padding-top: 87px;
+  }
+
+  #callUsTodayBox {
+    width: 140px !important;
+    font-size: 17px !important;
+    height: 91px !important;
+  }
+  #callUsTodayBox strong span {
+    font-size: 20px !important;
+  }
+  #callUsTodayContainer button {
+    width: 140px !important;
+    padding: 6px 0 !important;
+    text-align: center !important;
+    font-size: 12px;
+  }
+
+  .wowHighlightBox {
+    margin: 0 auto;
+    margin-bottom: 10px;
+    height: 270px;
+  }
+
+  .wowHighlightBox .zoomImage {
+    height: 270px;
+  }
+
+  .headerContainer {
+    width: 100%;
+    background-color: #EBEBEB;
+  }
+
+  .navBarContainer {
+    position: relative;
+    background-color: transparent;
+  }
+
+  .navbar-brand {
+    padding: 0;
+  }
+
+    .navbar-brand img {
+      width: 341px;
+      vertical-align: middle;
+    }
+
+  button.navbar-toggle {
+    background-color: #02143B;
+  }
+
+    button.navbar-toggle:hover, button.navbar-toggle:focus {
+      background-color: #286090 !important;
+    }
+
+  .navbar-header {
+    padding-bottom: 0;
+  }
+
+  .navigationBar {
+    padding-bottom: 0;
+    padding-top:0;
+  }
+
+  .navbar .navbar-nav {
+    float: right;
+    text-align: right;
+    margin-right: 0px;
+  }
+
+    .navbar .navbar-nav > li > a {
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+
+  .pageHeaderImage .pageTitle h1 {
+    width: 100%;
+    max-width: 400px;
+    font-size: 24px;
+  }
+
+  .pageHeaderImage .pageTitle {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .modal-dialog {
+    width: 100%;
+  }
+
+  body.in-the-press .pageTitle {
+    margin-top: 0;
+  }
+
+  .propertyTypeBox {
+    margin: 0 auto;
+    margin-bottom: 0;
+  }
+
+  .propertyTypeBoxImage {
+    height: 200px
+  }
+
+  .calendarMonthView {
+    float: none;
+  }
+
+  .calendarBox {
+    width: 100%;
+  }
+
+  .calendarPricingCategories {
+    width: 375px;
+    margin: 0;
+  }
+
+  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a,
+  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #02143B;
+    font-size: 15px;
+    text-align: right;
+    padding-top: 0;
+    padding-right: 0;
+  }
+
+  .pageHeaderImage {
+    height: 250px;
+    background-position: bottom;
+  }
+
+  .pageTitle {
+    padding-top: 22px !important;
+    padding-bottom: 10px !important;
+  }
+
+    .pageTitle .lineHeading {
+      font-size: 20px !important;
+      padding-top: 8px !important;
+      padding-bottom: 8px !important;
+    }
+
+      .pageTitle .lineHeading:before {
+        width: 28px !important;
+        height: 28px !important;
+        top: -23px !important;
+      }
+
+  .activityDescriptionCol {
+    margin-left: 0;
+  }
+
+  .propertyActivityDescription {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  #sendFriendModal .form-group .col-xs-12 {
+    margin-left: 15px;
+  }
+
+  #sendFriendModal .form-group .form-control {
+    width: 95%;
+  }
+
+  #sendFriendModal button {
+    margin-left: 0;
+  }
+
+  .propertyAvailabilitySelectorSection {
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+  }
+
+  .propertyCalendarExtraInfo {
+    padding: 10px 10px 10px 10px;
+    text-align: left;
+  }
+
+  .introText {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
+  .row.mobileFix {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .propertyGalleryActionCol {
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+  }
+
+  .propertyGalleryPropertyNameCol h3 {
+    margin-top: 12px;
+    font-size: 20px;
+  }
+
+  .propertyGalleryPropertyNameCol p {
+    margin-bottom: 3px;
+  }
+
+  .propertyGalleryActionCol .propertyPageActionButtons {
+    margin-top: 10px !important;
+  }
+
+  #propertyGalleryModal {
+    padding-right: 0 !important;
+  }
+
+    #propertyGalleryModal .modal-dialog {
+      margin-left: 0 !important;
+    }
+
+  .detailsOfferInfo {
+    bottom: 16px !important;
+  }
+
+  .propertyListButtonsContainer {
+    text-align: center;
+  }
+
+  .theWowHouseCheckbox {
+    display: table-cell;
+  }
+
+  .agreementStatement p {
+    display: table-cell;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .topImagePlaceholder {
+    height: 330px
+  }
+
+  .topImagePlaceholder .container {
+    height: 330px
+  }
+  #calendarMonthSelection {
+    margin-top:15px;
+  }
+}
+
+@media (max-width:677px) {
+  .calendarMonthView {
+    width: 100%;
+  }
+
+  .calendarPricingCategories {
+    width: 100%;
+  }
+
+  .topImagePlaceholder {
+    height: 290px
+  }
+
+  .topImagePlaceholder .container {
+    height: 290px
+  }
+}
+
+@media (max-width:530px) {
+  .navbar-brand img {
+    width: 341px;
+    vertical-align: middle;
+  }
+
+  .topImagePlaceholder {
+    height: 250px
+  }
+
+  .topImagePlaceholder .container {
+    height: 250px
+  }
+
+}
+
+@media (max-width:490px) {
+  .navbar-brand img {
+    width: 341px;
+    vertical-align: middle;
+  }
+}
+
+@media (max-width:480px) {
+  .navbar-brand img {
+    width: 294px;
+    vertical-align: middle;
+    padding-top: 5px;
+  }
+}
+
+@media (max-width:450px) {
+  .navbar-brand img {
+    width: 294px;
+    vertical-align: middle;
+    padding-top: 5px;
+  }
+}
+
+@media (max-width:430px) {
+  .navbar-brand img {
+    width: 283px;
+    vertical-align: middle;
+    padding-top: 5px;
+  }
+}
+
+@media (max-width:420px) {
+  .navbar-brand img {
+    width: 258px;
+    vertical-align: middle;
+    padding-top: 7px;
+  }
+}
+
+@media (max-width:401px) {
+  .navbar-brand img {
+    width: 230px;
+    vertical-align: middle;
+    padding-top: 9px;
+  }
+}
+
+@media(max-height:664px) {
+  .propertyGalleryPropertyNameCol h3 {
+    font-size: 18px;
+  }
+
+  .propertyGalleryPropertyNameCol p {
+    font-size: 12px;
+  }
+
+  .propertyGalleryActionCol .btn {
+    padding: 4px 9px;
+    font-size: 12px;
+  }
+
+  .modal-dialog {
+    margin: 10px auto;
+  }
+}
+@media (min-width:768px) {
+  .modal-dialog {
+    width: 650px;
+  }
+}
+
+@media (min-width:801px) {
+  .modal-dialog {
+    width: 750px;
+  }
+}
+
+@media (min-width:901px) {
+  .modal-dialog {
+    width: 850px;
+  }
+}
+
+@media (min-width:1001px) {
+  .modal-dialog {
+    width: 950px;
+  }
+}
+
+@media (min-width:1101px) {
+  .modal-dialog {
+    width: 1050px;
+  }
+}
+
+@media (min-width:1201px) {
+  .modal-dialog {
+    width: 1150px;
+  }
+}
+@media (min-width: 768px) {
+  .modal-dialog {
+    margin: 20px auto;
+  }
+}
